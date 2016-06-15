@@ -16,5 +16,4 @@ module.exports = {
       this._registeredWithBabel = true;
     }
   }
-
 };

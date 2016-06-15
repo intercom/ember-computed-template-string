@@ -1,6 +1,8 @@
-# Ember-computed-template-string
+# ember-computed-template-string
 
-This README outlines the details of collaborating on this Ember addon.
+Readme coming soon...
+
+[![Build Status](https://travis-ci.org/intercom/ember-computed-template-string.svg?branch=master)](https://travis-ci.org/intercom/ember-computed-template-string)
 
 ## Installation
 
