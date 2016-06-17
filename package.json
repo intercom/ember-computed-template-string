@@ -1,8 +1,8 @@
 {
   "name": "ember-computed-template-string",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
-  "private": true,
+  "version": "0.0.1",
+  "description": "Create computed properties with template strings",
+  "private": false,
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -41,7 +41,7 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "unpublished-ember-addon"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
