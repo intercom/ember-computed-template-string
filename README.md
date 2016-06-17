@@ -1,6 +1,6 @@
 # ember-computed-template-string
 
-[![Build Status](https://travis-ci.org/intercom/ember-computed-template-string.svg?branch=master)](https://travis-ci.org/intercom/ember-computed-template-string)
+[![Build Status](https://travis-ci.org/intercom/ember-computed-template-string.svg?branch=master)](https://travis-ci.org/intercom/ember-computed-template-string) [![Ember Observer Score](http://emberobserver.com/badges/ember-computed-template-string.svg)](http://emberobserver.com/addons/ember-computed-template-string)
 
 Consider the canonical computed property example:
 
@@ -30,23 +30,17 @@ Ember.Object.extend({
 
 ## Installation
 
+This is an Ember CLI addon, to install:
+
+`ember install ember-computed-template-string`
+
+## Development Instructions
+
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
+### Running
 
 * `ember server`
 * Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
