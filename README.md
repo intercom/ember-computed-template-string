@@ -1,6 +1,6 @@
 # ember-computed-template-string
 
-[![Ember Observer Score](http://emberobserver.com/badges/ember-computed-template-string.svg)](http://emberobserver.com/addons/ember-computed-template-string)
+[![Build Status](https://travis-ci.org/intercom/ember-computed-template-string.svg?branch=master)](https://travis-ci.org/intercom/ember-computed-template-string) [![Ember Observer Score](http://emberobserver.com/badges/ember-computed-template-string.svg)](http://emberobserver.com/addons/ember-computed-template-string)
 
 Consider the canonical computed property example:
 
