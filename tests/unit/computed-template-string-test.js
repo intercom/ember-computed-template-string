@@ -13,8 +13,8 @@ var Person = Em.Object.extend({
   greeting: computedTemplateString('Hello ${name}, you are ${age} years old'),
   nested: computedTemplateString('the path is ${config.path}, ok?'),
   multi: computedTemplateString('hi ${name}, bye ${name}'),
-  withSingleQuote: computedTemplateString("Single quote in literal: ' and in property: ${name}"),
-  withDoubleQuote: computedTemplateString('Double quote in literal: " and in property: ${name}'),
+  withSingleQuote: computedTemplateString("Single quotes in literal: '' and in property: ${name}"),
+  withDoubleQuote: computedTemplateString('Double quotes in literal: "" and in property: ${name}'),
 });
 
 test('A template with two properties', function(assert) {
@@ -43,14 +43,14 @@ test('A template with a key used multiple times', function(assert) {
 
 test('A template with a single quote', function(assert) {
   var person = Person.create({ name: 'Ben' });
-  assert.equal(person.get('withSingleQuote'), "Single quote in literal: ' and in property: Ben");
+  assert.equal(person.get('withSingleQuote'), "Single quotes in literal: '' and in property: Ben");
   person.set('name', "Mr O'Shea");
-  assert.equal(person.get('withSingleQuote'), "Single quote in literal: ' and in property: Mr O'Shea");
+  assert.equal(person.get('withSingleQuote'), "Single quotes in literal: '' and in property: Mr O'Shea");
 });
 
 test('A template with a double quote', function(assert) {
   var person = Person.create({ name: 'Ben' });
-  assert.equal(person.get('withDoubleQuote'), 'Double quote in literal: " and in property: Ben');
+  assert.equal(person.get('withDoubleQuote'), 'Double quotes in literal: "" and in property: Ben');
   person.set('name', 'Mr O"Shea');
-  assert.equal(person.get('withDoubleQuote'), 'Double quote in literal: " and in property: Mr O"Shea');
+  assert.equal(person.get('withDoubleQuote'), 'Double quotes in literal: "" and in property: Mr O"Shea');
 });
