@@ -1,9 +1,8 @@
 import Em from 'ember';
 import computedTemplateString from 'ember-computed-template-string';
-
 import { module, test } from 'qunit';
 
-module("Computed.templateString");
+module("Computed template string with an import");
 
 var Person = Em.Object.extend({
   name: 'Alex',
@@ -18,7 +17,6 @@ var Person = Em.Object.extend({
   withDoubleQuote: computedTemplateString('Double quote in literal: " and in property: ${name}'),
 });
 
-
 test('A template with two properties', function(assert) {
   var person = Person.create({ name: 'Alex', age: 2 });
   assert.equal(person.get('greeting'), 'Hello Alex, you are 2 years old');
@@ -26,7 +24,7 @@ test('A template with two properties', function(assert) {
   person.setProperties({ name: 'Ben', age: 1 });
   assert.equal(person.get('greeting'), 'Hello Ben, you are 1 years old');
 });
-//
+
 test('A template with a nested property', function(assert) {
   var person = Person.create();
   assert.equal(person.get('nested'), 'the path is /home, ok?');
