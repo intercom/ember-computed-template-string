@@ -1,6 +1,6 @@
 {
   "name": "ember-computed-template-string",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Computed property macro such as `fullName: templateString('${firstName} ${lastName}')`",
   "private": false,
   "directories": {
