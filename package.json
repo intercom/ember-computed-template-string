@@ -1,7 +1,7 @@
 {
   "name": "ember-computed-template-string",
   "version": "0.1.0",
-  "description": "Computed property macro such as `fullName: templateString('${firstName} ${lastName}')`",
+  "description": "One-line string computed properties",
   "private": false,
   "directories": {
     "doc": "doc",
