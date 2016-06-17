@@ -1,7 +1,7 @@
 {
   "name": "ember-computed-template-string",
-  "version": "0.0.1",
-  "description": "Create computed properties with template strings",
+  "version": "0.0.2",
+  "description": "Computed property macro such as `fullName: templateString('${firstName} ${lastName}')`",
   "private": false,
   "directories": {
     "doc": "doc",
@@ -41,7 +41,7 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "unpublished-ember-addon"
+    "ember-addon"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
