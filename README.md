@@ -25,7 +25,6 @@ Ember.Object.extend({
   lastName: null,
 
   fullName: templateString("${firstName} ${lastName}")
-  })
 });
 ```
 
