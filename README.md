@@ -6,8 +6,8 @@ Consider the canonical computed property example:
 
 ```js
 Ember.Object.extend({
-  firstName: null,
-  lastName: null,
+  firstName: 'Serena',
+  lastName: 'Fritsch',
 
   fullName: Ember.computed('firstName', 'lastName', function() {
     return `${this.get('firstName')} ${this.get('lastName')}`;
@@ -21,8 +21,8 @@ Ember.Object.extend({
 import templateString from 'ember-computed-template-string';
 
 Ember.Object.extend({
-  firstName: null,
-  lastName: null,
+  firstName: 'Serena',
+  lastName: 'Fritsch',
 
   fullName: templateString("${firstName} ${lastName}")
 });
