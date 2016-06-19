@@ -1,6 +1,6 @@
 {
   "name": "ember-computed-template-string",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "One-line string computed properties",
   "private": false,
   "directories": {
