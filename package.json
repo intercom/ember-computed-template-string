@@ -12,7 +12,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/intercom/ember-computed-template-string",
   "engines": {
     "node": ">= 5.0.0"
   },
