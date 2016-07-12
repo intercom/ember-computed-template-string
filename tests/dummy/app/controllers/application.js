@@ -2,10 +2,16 @@ import Em from 'ember';
 import computedTemplateString from 'ember-computed-template-string';
 
 export default Em.Controller.extend({
-  firstName: 'foo',
-  lastName: 'bar',
+  firstName: 'Peter',
+  lastName: 'Sellers',
+
   fullName: Em.computed('firstName', 'lastName', function() {
-    return this.get('firstName') + ' ' +  this.get('lastName');
+    return `${this.get('firstName')} ${this.get('lastName')}`;
   }),
-  fullName2: computedTemplateString("${firstName} ${lastName}")
+  greeting: Em.computed('fullName', function() {
+    return `Hi ${this.get('fullName')}, welcome to Ember!`;
+  }),
+
+  fullName2: computedTemplateString('${firstName} ${lastName}'),
+  greeting2: computedTemplateString("Hi ${fullName}, welcome to Ember!")
 });
