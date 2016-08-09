@@ -2,6 +2,7 @@
 let Parser = require('ember-computed-template-string-parser');
 
 let ComputedTemplateStringTransform = function(options) {
+  options = options || {};
   let configuredReplaceCallPaths = options.replaceCallPaths || [];
 
   return function(babel) {
