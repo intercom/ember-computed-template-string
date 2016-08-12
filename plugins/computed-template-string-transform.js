@@ -1,11 +1,13 @@
 'use strict';
 let Parser = require('ember-computed-template-string-parser');
+let stringify = require('json-stable-stringify');
+let path = require('path');
 
 let ComputedTemplateStringTransform = function(options) {
   options = options || {};
   let configuredReplaceCallPaths = options.replaceCallPaths || [];
 
-  return function(babel) {
+  let emberComputedTemplateString = function(babel) {
     let types = babel.types;
     let importedComputedTemplateStringModuleName; //`computedTemplateString` from `import computedTemplateString from 'ember-computed-template-string';`
 
@@ -36,6 +38,16 @@ let ComputedTemplateStringTransform = function(options) {
       }
     });
   }
+
+  emberComputedTemplateString.baseDir = function() {
+    return path.join(__dirname, '..');
+  };
+
+  emberComputedTemplateString.cacheKey = function() {
+    return stringify(options);
+  };
+
+  return emberComputedTemplateString;
 };
 
 function getCallPath(node) {
